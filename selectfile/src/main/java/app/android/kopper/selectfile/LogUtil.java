@@ -1,0 +1,45 @@
+/*
+ * Created by kopper on 04.04.15 13:01
+ * (C) Copyright 2015 kopperek@gmail.com
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Lesser General Public License
+ * (LGPL) version 2.1 which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/lgpl-2.1.html
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ */
+
+package app.android.kopper.selectfile;
+
+import android.util.Log;
+
+public class LogUtil {
+
+    private static final String LOG_TAG="SelectFile.log";
+
+    private static final boolean DEBUG=false;
+
+
+    public static void i(String s) {
+        if(DEBUG)
+            Log.i(LOG_TAG,s);
+    }
+
+    public static void d(String s) {
+        if(DEBUG)
+        Log.d(LOG_TAG,s);
+    }
+
+    public static void e(Throwable e) {
+        e("",e);
+    }
+
+    public static void e(String s, Throwable e) {
+        if(DEBUG)
+        Log.e(LOG_TAG,s,e);
+    }
+}

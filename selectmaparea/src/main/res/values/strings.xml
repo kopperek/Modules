@@ -1,0 +1,6 @@
+<resources>
+    <string name="select_area">Select area (two points with long click)</string>
+    <string name="done_button">Done</string>
+    <string name="error_two_points">You have to select two points</string>
+    <string name="error_map_load">Map load problem...</string>
+</resources>
